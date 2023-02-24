@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "whisper-cli"
+version = "1.0.6"
+description = "Whisper CLI with dependencies."
+homepage  = "https://github.com/ahmetoner/whisper-asr-webservice/"
+license = "https://github.com/ahmetoner/whisper-asr-webservice/blob/main/LICENCE"
+authors = [
+    "Zachary Skalko"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tqdm = "^4.64.1"
+transformers = "^4.22.1"
+ffmpeg-python = "^0.2.0"
+torch = "=1.12.0"
+openai-whisper = { git = "https://github.com/openai/whisper.git", tag = "v20230124" }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
